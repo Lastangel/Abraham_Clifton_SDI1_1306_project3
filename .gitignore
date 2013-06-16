@@ -1,0 +1,24 @@
+//alert("JavaScript works!");
+//Arthor: Clifton Abraham
+// SDI1, 1306
+// Assignment 3
+// Story: Last Angel the Demon hunter
+
+var cave; // string property
+var lastAngel;// Boolean property
+var weapons;// number Property
+var Demons; // array property
+
+cave = {
+  preperations: function(){
+    var walk = " I am Last Angel the  Demon hunter"
+    if(walk === true){
+         console.log(walk + "I've been stalking this Cave I believe there is three Demon's at least.");
+         console.log(" I must gather my things, so I grab my sword and my coat ");
+     
+    }
+   
+    
+ }
+    
+    };
