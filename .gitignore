@@ -10,19 +10,23 @@ var weapons;// number Property
 var Demons; // array property
 
 cave = {
-  preperations: function(){
-    var walk = " I am Last Angel the  Demon hunter"
-    if(walk === true){
-         console.log(walk + "I've been stalking this Cave I believe there is three Demon's at least.");
-         console.log(" I must gather my things, so I grab my sword and my coat ");
+  preperations: function(plot){
+      plot = " This is my Destiny, ";
+  var walk  = " I am Last Angel the  Demon hunter. ";
+    if(walk == walk){
+         console.log(plot + walk +
+       " I've been stalking this Cave, I believe there is three Demon's at least.");
+         console.log(" I must gather my things, so I grab my sword and my coat. ");
+         console.log(" I make my way to the cave, I enter it's Dark and errie. ");
      
-    }
+    } else{
+        console.log(" It doesn't feel right I'm move on and see if I can find Demon's elsewere. ");
+    };
    
     
- }
-    
-    };
-lastAngel = {
+ } // end of method
+   
+}; lastAngel = {
     Light: function(){
     var Lantern = true;
     var Lighter = true;
