@@ -22,3 +22,31 @@ cave = {
  }
     
     };
+lastAngel = {
+    Light: function(){
+    var Lantern = true;
+    var Lighter = true;
+    var Darkness = false;
+    if(Lantern && Lighter === true){
+        console.log(" It's so dark, I must pull out my Lighter. ");
+        console.log(" I took five step's, and I bumped into a chest on the ground. ");
+        console.log(" I broke open the chest to find a big lantern, Nice! ");
+        console.log(" A demon came out, good thing I can see,"
+                    + "I cut his head clean off with my sword. ");
+        } else if(Lantern || Lighter === false){
+            console.log(" It's to dark in here, AHHH!! what was that ");
+            console.log(" A demon came from no were I got stabbed and bleed to death "
+                        + " GAME OVER!!! ")
+        } else if(Lighter === true && Lantern === false){
+            console.log("It's so dark, I must pull out my Lighter.");
+            console.log("I took five step's, and I bumped into a chest on the ground.");
+            console.log(" So I ignored it, I don't have time for chests. ");
+            console.log(" A demon came out of no were and punched me in the face "
+                        + " I managed to plunge my sword in his chest. I defeated the demon ")
+            }; // end of nested conditional 
+        
+    } // end of method
+    return (lastAngel.Light)
+}; // end of Boolean property
+
+cave.preperations(" This is my Destiny ");
