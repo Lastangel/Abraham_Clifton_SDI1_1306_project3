@@ -8,6 +8,7 @@ var cave; // string property
 var lastAngel;// Boolean property
 var weapons;// number Property
 var Demons; // array property
+var demonHuner;// Object property, (json data)
 
 cave = {
   preperations: function(plot){
@@ -15,7 +16,7 @@ cave = {
   var walk  = " I am Last Angel the  Demon hunter. ";
     if(walk == walk){
          console.log(plot + walk +
-       " I've been stalking this Cave, I believe there is three Demon's at least.");
+       " I've been stalking this Cave, I believe there are three Demon's at least.");
          console.log(" I must gather my things, so I grab my sword and my coat. ");
          console.log(" I make my way to the cave, I enter it's Dark and errie. ");
      
@@ -26,11 +27,12 @@ cave = {
     
  } // end of method
    
-}; lastAngel = {
-    Light: function(){
-    var Lantern = true;
-    var Lighter = true;
-    var Darkness = false;
+}; // end of prperty
+
+lastAngel = {
+    Light: function(Lantern, Lighter){
+        Lantern = true;
+        Lighter = true;
     if(Lantern && Lighter === true){
         console.log(" It's so dark, I must pull out my Lighter. ");
         console.log(" I took five step's, and I bumped into a chest on the ground. ");
@@ -48,9 +50,34 @@ cave = {
             console.log(" A demon came out of no were and punched me in the face "
                         + " I managed to plunge my sword in his chest. I defeated the demon ")
             }; // end of nested conditional 
-        
+        return Lantern;
     } // end of method
-    return (lastAngel.Light)
+  
 }; // end of Boolean property
 
+weapons = {
+    smelly: function(smellyDemon){
+     smellyDemon = 100;
+    console.log(" I walked further down the hallway, then I smelled something so horid! "
+                + " It's a Smelly demon? he's rushing towards me," + " Fight!!" );
+    while(smellyDemon > 0){
+        smellyDemon = smellyDemon -5
+        console.log(" I hit the Demon " + smellyDemon
+                    + " Health Remains "
+                    + " Good Hit Lastangel! ");
+    };// end of while loop
+    console.log(" Finally that is over with, the smelly demon is no more. ");
+      return 0;
+    
+    }// end of method
+};
+// procedure output
 cave.preperations(" This is my Destiny ");
+// return values
+var Newlight = lastAngel.Light(true,true);
+var greatWeapon = weapons.smelly(100);
+// outputs
+console.log(" I chose the Lantern so I could see "
+            + Newlight);
+console.log(" I defeated the smelly demon "
+            + greatWeapon + " Health remain's.");
