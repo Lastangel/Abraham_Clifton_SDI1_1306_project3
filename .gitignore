@@ -75,9 +75,9 @@ weapons = {
 demons ={
     demonsName: [
         {
-       demon1:   Crawly,
-       demon2:  mischief,
-       demon3:  voltage
+       demon1:   "Crawly",
+       demon2:  "mischief",
+       demon3:  " and voltage "
          
         },
         {
@@ -98,31 +98,40 @@ demons ={
             + "crawly tries to hit last angel but he dodges it.",
             fightThree: " last up is mischief,"
             + "last angel gets into a sword fight with him."
+
  }
   
 
-     
   
     ] // end of demonsName Array
 
-     var Names = demons.demonsName;
-  for(var key in Names){
-    } // end of for loop
-    
+
+
     
         
     
 
 }; // end of demons property
 
-
 // procedure output
 cave.preperations(" This is my Destiny ");
 // return values
 var Newlight = lastAngel.Light(true,true);
 var greatWeapon = weapons.smelly(100);
+
 // outputs
 console.log(" I chose the Lantern so I could see "
             + Newlight);
 console.log(" I defeated the smelly demon "
             + greatWeapon + " Health remain's.");
+   
+     for (var key in demons.demonsName){
+        if (demons.demonsName[key].demon1){
+             console.log(" There names are " + demons.demonsName[demons.demon1]);
+        }
+    
+    } // end of for loop
+
+  
+
+
