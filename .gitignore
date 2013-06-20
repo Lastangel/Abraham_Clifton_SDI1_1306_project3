@@ -83,11 +83,11 @@ demons ={
         {
        demonOne: " Crawly ",
        demonTwo:   "mischief ",
-       demonThree: " and voltage ",
-       newName: function(Horrid){
-        demons.demonOne = Horrid
-        return Horrid ;
-       }
+       demonThree: " and voltage "
+      // newName: function(Horrid){
+      // demons.demonOne = Horrid
+      //  return Horrid ;
+      // }
          
         },
         
@@ -101,14 +101,17 @@ demons ={
           + " but because of his coat it fails and last angel kicks him off the cliff. "
             }
             
-        ] // end of demoninfo Array
-        } // end of demonInfo Object
+        ] // end of theFight Array
+        } // end of theFight Object
  
 
 
-    ]// end of demonsName Array
+    ],// end of demonsName Array
     
-    
+      newName: function(demonOne){
+       demons.demonOne = "Horrid"
+      return "Horrid";
+      }
 
 
     
@@ -143,7 +146,8 @@ console.log(" I defeated the smelly demon "
             + greatWeapon + " Health remain's.");
  for(var key in demons){
     console.log(demons[key]);
-}; // end of for loop 
+}; // end of for loop
+console.log(" The demon name is Actually " + rightName);
 console.log(" I defeated all of the demon's now it's time for me to rest up, The day is won!! ");
 console.log(demonHuner);
     
