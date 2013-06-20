@@ -10,6 +10,7 @@ var weapons;// number Property
 var demons; // array property
 var demonHuner;// Object property, (json data)
 
+
 cave = {
   preperations: function(plot){
       plot = " This is my Destiny, ";
@@ -30,7 +31,7 @@ cave = {
 }; // end of prperty
 
 lastAngel = {
-    Light: function(Lantern, Lighter){
+    Light: function(goodLight, Lighter){
         Lantern = true;
         Lighter = true;
     if(Lantern && Lighter === true){
@@ -50,7 +51,9 @@ lastAngel = {
             console.log(" A demon came out of no were and punched me in the face "
                         + " I managed to plunge my sword in his chest. I defeated the demon ")
             }; // end of nested conditional 
-        return Lantern;
+      var goodight = lastAngel.Light
+       
+        return goodLight; // method accesor 
     } // end of method
   
 }; // end of Boolean property
@@ -67,44 +70,45 @@ weapons = {
                     + " Good Hit Lastangel! ");
     };// end of while loop
     console.log(" Finally that is over with, the smelly demon is no more. ");
+    
       return 0;
     
     }// end of smelly method
 };
 
 demons ={
+    story: " I walk threw a door I see, to find a cliff, "
+         + " three demons appear from no were it's an ambush. The demon's names are ",
     demonsName: [
         {
-       demon1:   "Crawly",
-       demon2:  "mischief",
-       demon3:  " and voltage "
+       demonOne: " Crawly ",
+       demonTwo:   "mischief ",
+       demonThree: " and voltage ",
+       newName: function(Horrid){
+        demons.demonOne = Horrid
+        return Horrid ;
+       }
          
         },
+        
         {
-        demonsInfo:[
-            {
-             weaponChoicecrawly:   " likes the blunt hammer. " ,
-             weaponChoiceMischief: " loves the Kitana blade. ",
-             weaponChoiceVoltage:     " prefers a machette "
+        theFight:[
+            { 
+          fightCrawly: "Last angel takes his sword and plunges it in crawly's chest first.",
+         fightMischief: " then mischief tries to hit him"
+          + "but he dodges it and cut's his head off ",
+         fightVoltage: "Last up is votage he tries to touch last angel to electicute him"
+          + " but because of his coat it fails and last angel kicks him off the cliff. "
             }
             
         ] // end of demoninfo Array
-        }, // end of demonInfo Object
-         {
-            lastAngel: " Last Angel decides to  takes all of them on!! ",
-            fightOne: "He takes on Voltage first,"
-            + " so he knocks the mahette out of his hands",
-            fightTwo: "Crawly is up next,"
-            + "crawly tries to hit last angel but he dodges it.",
-            fightThree: " last up is mischief,"
-            + "last angel gets into a sword fight with him."
+        } // end of demonInfo Object
+ 
 
- }
-  
 
-  
-    ] // end of demonsName Array
-
+    ]// end of demonsName Array
+    
+    
 
 
     
@@ -113,24 +117,37 @@ demons ={
 
 }; // end of demons property
 
+demonHuner = {
+   "Charactors": [
+    {
+    "Last Angel": " The Demon Hunter ",
+     "Demons"   : " Crawly Mischief and Voltage "
+    }
+    
+   ],
+   "Story": {
+    "Location": " The Cave were the Demon's dwell.",
+    "Mission" : " Last Angel must defeat the demons in the cave."
+   }
+}; // end of demonHunter property
 // procedure output
 cave.preperations(" This is my Destiny ");
 // return values
 var Newlight = lastAngel.Light(true,true);
 var greatWeapon = weapons.smelly(100);
-
+var rightName = demons.newName(); 
 // outputs
 console.log(" I chose the Lantern so I could see "
             + Newlight);
 console.log(" I defeated the smelly demon "
             + greatWeapon + " Health remain's.");
-   
-     for (var key in demons.demonsName){
-        if (demons.demonsName[key].demon1){
-             console.log(" There names are " + demons.demonsName[demons.demon1]);
-        }
+ for(var key in demons){
+    console.log(demons[key]);
+}; // end of for loop 
+console.log(" I defeated all of the demon's now it's time for me to rest up, The day is won!! ");
+console.log(demonHuner);
     
-    } // end of for loop
+
 
   
 
