@@ -7,7 +7,7 @@
 var cave; // string property
 var lastAngel;// Boolean property
 var weapons;// number Property
-var Demons; // array property
+var demons; // array property
 var demonHuner;// Object property, (json data)
 
 cave = {
@@ -69,8 +69,53 @@ weapons = {
     console.log(" Finally that is over with, the smelly demon is no more. ");
       return 0;
     
-    }// end of method
+    }// end of smelly method
 };
+
+demons ={
+    demonsName: [
+        {
+       demon1:   Crawly,
+       demon2:  mischief,
+       demon3:  voltage
+         
+        },
+        {
+        demonsInfo:[
+            {
+             weaponChoicecrawly:   " likes the blunt hammer. " ,
+             weaponChoiceMischief: " loves the Kitana blade. ",
+             weaponChoiceVoltage:     " prefers a machette "
+            }
+            
+        ] // end of demoninfo Array
+        }, // end of demonInfo Object
+         {
+            lastAngel: " Last Angel decides to  takes all of them on!! ",
+            fightOne: "He takes on Voltage first,"
+            + " so he knocks the mahette out of his hands",
+            fightTwo: "Crawly is up next,"
+            + "crawly tries to hit last angel but he dodges it.",
+            fightThree: " last up is mischief,"
+            + "last angel gets into a sword fight with him."
+ }
+  
+
+     
+  
+    ] // end of demonsName Array
+
+     var Names = demons.demonsName;
+  for(var key in Names){
+    } // end of for loop
+    
+    
+        
+    
+
+}; // end of demons property
+
+
 // procedure output
 cave.preperations(" This is my Destiny ");
 // return values
