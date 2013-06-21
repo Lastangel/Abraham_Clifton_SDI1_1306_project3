@@ -49,7 +49,7 @@ lastAngel = {
             console.log("I took five step's, and I bumped into a chest on the ground.");
             console.log(" So I ignored it, I don't have time for chests. ");
             console.log(" A demon came out of no were and punched me in the face "
-                        + " I managed to plunge my sword in his chest. I defeated the demon ")
+                        + " I managed to plunge my sword in his chest. I defeated the demon ");
             }; // end of nested conditional 
       var goodight = lastAngel.Light
        
@@ -108,8 +108,8 @@ demons ={
 
     ],// end of demonsName Array
     
-      newName: function(demonOne){
-       demons.demonOne = "Horrid"
+      newName: function(Horrid){
+       Horrid = demons.demonOne // Method Mutator
       return "Horrid";
       }
 
@@ -131,6 +131,7 @@ demonHuner = {
    "Story": {
     "Location": " The Cave were the Demon's dwell.",
     "Mission" : " Last Angel must defeat the demons in the cave."
+    
    }
 }; // end of demonHunter property
 // procedure output
@@ -150,7 +151,8 @@ console.log(" I defeated the smelly demon "
 console.log(" The demon name is Actually " + rightName);
 console.log(" I defeated all of the demon's now it's time for me to rest up, The day is won!! ");
 console.log(demonHuner);
-    
+
+
 
 
   
